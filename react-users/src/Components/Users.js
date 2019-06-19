@@ -40,9 +40,6 @@ class Users extends Component {
 
 
     render() {
-      console.log('this is the data');
-      console.log(this.state.data);
-
       return (
         <div className="container">
           <div className="table header">
@@ -57,7 +54,6 @@ class Users extends Component {
         </div>
       );
     }
-
   }
 
 export default Users;
