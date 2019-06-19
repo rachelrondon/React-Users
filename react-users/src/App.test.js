@@ -13,12 +13,42 @@ it('renders without crashing', () => {
   shallow(<App />);
 });
 
+describe('<App />', () => {
+  it('renders a div', () => {
+    const renderer = new ShallowRenderer();
+    renderer.render(<App />);
+    const result = renderer.getRenderOutput();
+
+    expect(result.type).toBe('div');
+  });
+
+  it('renders <Users /> component', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(Users)).toHaveLength(1);
+  })
+});
+
 describe('<Users />', () => {
+  it('renders a div', () => {
+    const renderer = new ShallowRenderer();
+    renderer.render(<Users />);
+    const result = renderer.getRenderOutput();
+
+    expect(result.type).toBe('div');
+  });
+
   it('renders <User /> component', () => {
     const wrapper = shallow(<Users />);
-    expect(wrapper.find(User)).to.have.length(1);
+    expect(wrapper.find(User)).toHaveLength(1);
   })
 
+  it('renders four divs with the class `.row`', () => {
+    const wrapper = shallow(<Users />);
+    expect(wrapper.find('.row')).toHaveLength(4);
+  })
+});
+
+describe('<User />', () => {
   it('renders a div', () => {
     const renderer = new ShallowRenderer();
     renderer.render(<Users />);
