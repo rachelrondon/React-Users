@@ -5,7 +5,7 @@ const User = ({ data }) => {
     return(
       <div>
       {data.map((user) =>
-        <div className="table content">
+        <div className="table content" key={user.id}>
           <div className="row first">{user.name}</div>
           <div className="row">{user.email}</div>
           <div className="row">{user.address.city}</div>
