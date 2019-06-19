@@ -9,10 +9,11 @@ The unit tests have been setup with Jest (https://jestjs.io/)
 You can install this project locally by following the steps below:
 
 1. `git clone https://github.com/rachelrondon/React-Users`
-2. `cd react-users`
-3. `npm install`
-4. `npm start`
-5. Visit `http://localhost:3000` in your browser of choice  
+2. `cd React-Users`
+3. `cd react-users`
+4. `npm install`
+5. `npm start`
+6. Visit `http://localhost:3000` in your browser of choice  
 
 ## Future Improvements ##
 
