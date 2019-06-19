@@ -16,4 +16,4 @@ You can install this project locally by following the steps below:
 
 ## Future Improvements ##
 
-Utilize Redux (https://redux.js.org/) and Redux-Thunk (https://github.com/reduxjs/redux-thunk) for state management. 
+Utilize Redux (https://redux.js.org/) and Redux-Thunk (https://github.com/reduxjs/redux-thunk) for state management.
