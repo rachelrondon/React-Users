@@ -1,4 +1,4 @@
-This project uses the React Users API
+This project utilizes the React Users API
 
 ## Technologies
 - [Create React App](https://github.com/facebookincubator/create-react-app)
